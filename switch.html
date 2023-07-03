@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let menu = 1
+
+        // switch(menu){
+        //     case 0:
+        //         consol.log("한식")
+        //         break; //break가 없으면 break 만날때까지 진행
+        //     case 1:
+        //         console.log("중식")
+        //         break;
+        //     case 2:
+        //         console.log("분식")
+        //         break;
+        //     default:
+        //         console.log("은 오늘의 메뉴") //break가 없을 때 수행됨
+        // }
+
+        // switch if문 처럼 사용하기
+        // let score = 88;
+        // switch (true){
+        //     case score > 90:
+        //         console.log("우수")
+        //         break;
+        //     case score >= 60:
+        //         console.log("보통")
+        //         break;
+        //     default: 
+        //         console.log("저조")
+        //     }
+
+
+        //반복문 사용
+        // let idx3 = 0;
+        // while (idx3 < 5){
+        //     idx3 = idx3 + 1;
+        //     console.log("hello java script")
+        // }
+        
+
+        // // 0,1,2,3,4 출력
+        // let idx = 0;
+        // while (idx < 5){
+        //     console.log(idx);
+        //     idx = idx +1;
+        // // }
+
+        // let idx2 = 4;
+        // while (idx2 >= 0 ){
+        //     console.log(idx2);
+        //     idx2 --;
+        // }
+
+
+        // // 1,3 ,5,7,9 순서대로 출력
+        // let num = 1;
+        // while (num < 10){
+        //     console.log(num)
+        //     num = num +2
+        // }
+
+        // 별 찍기
+        // let dot = 1;
+        // while (dot <= 5){
+        //     document.writeln("*")*dot;
+        //     document.writeln("<br/")
+        //     dot = dot + 1
+        // }
+       
+        // for ( let idx2 = 0; idx2<5; idx2= idx2+1){
+        //     document.write("*")*idx2;
+        //     document.write("<br/>")
+        //         }
+
+
+        // let dot = 4
+        // while (dot > 0){
+        //     document.write("1")*dot
+        //     dot = dot --
+        // }
+
+        // for (let idx=0; idx<5; idx=idx +1){
+        //     console.log(idx);
+        // }
+        
+
+
+        // 별찍기 실습(1)
+        for(let i=0; i<5; i=i+1){
+            for(let j=0; j<=i; j=j+1){
+                document.write("*");
+            }
+            document.write("<br/>")
+        }
+
+        // 별찍기 (*5개씩)
+        for(let i=0; i<5; i=i+1){
+            document.write("*");
+            if(i%5 == 4){
+                document.write("<br />")
+            }
+        }
+
+        // 별찍기 실습(2)
+        for(let i=0; i<5; i=i+1){
+            for(let j=0; j<=i; j=j+1){
+                document.write("*"); //1,2,3,4
+            }
+            for(let j=0; j<=i; j=j-1){
+                document.write(" "); //
+            }
+            document.write("<br/>")
+        }
+
+        // //
+
+        // for (let i =1; i<5; i=i+1){
+        //     if(i%2==0){
+        //         break; // 반복문 중단, 1
+        //     }
+        //     document.write(i)
+        // }
+
+        // for (let i =1; i<5; i=i+1){
+        //     if(i%2==0){
+        //         continue; // 반복 수행하지 않고, 다음 반복문으로 이동, 1,3
+        //     }
+        //     document.write(i)
+        // }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

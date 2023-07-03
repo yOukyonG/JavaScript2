@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            document.write("안녕하세요","<br/>")
+        }
+        let f2 = function(){
+            document.write("반갑습니다"+"<br/>")
+        }
+        // 함수 호출
+        f1() // 별도의 메모리 공간을 할당받아서 f1 내용을 수행
+        f2() // f2라는 함수를 호출 (call)
+
+
+        //매개변수가 없는 함수
+        let func = function(){
+            for (let i=0; i<3; i=i+1){
+                document.write(i+"<br/>")
+            }
+        }
+
+        //매개변수가 있는 함수
+        let argfunc = function(cnt){
+            for (let i=0; i<cnt; i=i+1){
+                document.write(i + "<br/>")
+            }
+        }
+        argfunc(3)
+        func()
+        //return하는 함수가 없는 경우, 함수를 호출하고 더이상 작업을 이어서 수행할 수 없음
+        let integerAddwithinteger = function(a,b){
+            // 2개의 정수를 입력받아서 더한 후 결과를 출력하는 함수
+            let r = a + b
+            // document.write(a + "+" + b +"=",r)
+            return r
+        }
+        document.write(integerAddwithinteger(9,109))
+        
+        let result = integerAddwithinteger(9,109)
+        document.write("<br/>" + result)
+        // return 이 생략된 경우, 맨 마지막에 return 이 있는 것으로 간주
+
+        integerAddwithinteger(9)
+        //매개변수는 뒤에서부터 생략 가능
+        //생략하면 undefined 가 대입된다
+    </script>
+</body>
+</html>
